@@ -1,0 +1,15 @@
+<html>
+<body>
+<title>Assignment 3</title>
+<h1>Supreeth Tamvada- 1001661903</h1>
+Duration: ({{timedur}}) seconds
+{% block content %}
+{% for earthquake in ci %}
+
+<p> <b>Place:{{earthquake["place"]}}</b> <b>Latitude:{{earthquake["latitude"]}} <b>Longitude:{{earthquake["longitude"]}} <b>MAGNITUDE:{{earthquake["mag"]}}</b> .
+	<b>Time:{{earthquake["time"]}}</b>. </p>
+{% endfor %}
+{% endblock %}
+
+</body>
+</html>

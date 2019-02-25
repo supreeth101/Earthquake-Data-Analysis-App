@@ -1,0 +1,6 @@
+<form action="/search" method="get">
+
+    Enter the range
+    Magnitude1<input type="text" name="mag1" method="get" action="/search">Magnitude2<input type="text" name="mag2" method="get" action="/search">
+        <input type="submit" value="Search">
+</form>

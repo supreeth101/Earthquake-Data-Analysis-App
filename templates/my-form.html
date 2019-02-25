@@ -1,0 +1,51 @@
+
+	<center>
+		<br>
+	<header> <h1> Supreeth Tamvada<br> </h1>
+	<br>  
+	<h2> Assignment 3 Cloud  </h2>
+
+
+<h3>Search mag<h3>
+	<form action="/search" method="get">
+        	Enter a magnitude<input type="text" name="mag" method="get" action="/search">
+			<input type="submit" value="Search">
+		 </form>
+
+<h4>Search mag range</h4>
+	<form action="./search1" method="POST" enctype="multipart/form-data">
+	      <input type="text" value="" name="mag_1" placeholder="mag1">
+	      <input type="text" value="" name="mag_2" placeholder="mag2">
+	      <input type="submit" value="Search">
+    	</form>	
+
+
+<h5>Search mag range random</h5>
+	<form action="./cachequeries" method="POST" enctype="multipart/form-data">
+	      <input type="text" value="" name="mag1" placeholder="mag1">
+	      <input type="text" value="" name="mag2" placeholder="mag2">
+          <input type="text" value="" name="Queries" placeholder="Queries">
+	      <input type="submit" value="Search">
+    	</form>
+
+<h6>Search mag range  - Redis</h6>
+	<form action="/quakeRangeRedis" method="get">
+		(Redis)Range From: <input type="text" name="mag" maxlength="200" width="60"> 
+		(Redis)Range To:<input type="text" name="mag1" maxlength="200" width="60">
+		<input type="submit" value="Search">
+	</form>
+
+<h7>Search random - Redis</h7>
+	<form action="/quakerange" method="get">
+		Range From: <input type="text" name="mag" maxlength="200" width="60"> 
+		Range To:<input type="text" name="mag1" maxlength="200" width="60">
+		<input type="submit" value="Search">
+	</form>
+
+<h8>Upload</h8>
+	<form action="./c" method="GET" enctype = "multipart/form-data">
+	Upload CSV:  <input type="file" name="myfile"><br>
+            <br>
+            <input type="submit" name="Submit"><br>
+
+	</form>
